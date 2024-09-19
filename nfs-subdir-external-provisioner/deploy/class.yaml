@@ -1,0 +1,9 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: csi-hostpath-sc
+provisioner: k8s-sigs.io/nfs-subdir-external-provisioner
+allowVolumeExpansion: true
+parameters:
+  archiveOnDelete: "false"
+
