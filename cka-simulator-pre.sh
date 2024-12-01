@@ -14,6 +14,7 @@ kubectl config set-context ek8s --user=kubernetes-admin --cluster=kubernetes
 kubectl config set-context hk8s --user=kubernetes-admin --cluster=kubernetes
 kubectl config set-context ok8s --user=kubernetes-admin --cluster=kubernetes
 kubectl config set-context wk8s --user=kubernetes-admin --cluster=kubernetes
+kubectl config set-context mk8s --user=kubernetes-admin --cluster=kubernetes
 
 # 模拟多集群主机名
 echo "${MASTER_IP} $(hostname)" >> /etc/hosts
